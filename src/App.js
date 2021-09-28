@@ -15,11 +15,12 @@ function App() {
     });
   };
 
+  // YOU MUST IMPORT REACT TO USE THIS METHOD
   return (
-    <div>
+    <React.Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </React.Fragment>
   );
 }
 
